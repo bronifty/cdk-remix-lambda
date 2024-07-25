@@ -11,7 +11,9 @@ export class CdkDeployStack extends cdk.Stack {
     const lambda = new cdk.aws_lambda.Function(this, "remix-lambda", {
       runtime: cdk.aws_lambda.Runtime.NODEJS_20_X,
       handler: "lambda.handler",
-      code: cdk.aws_lambda.Code.fromAsset(`${__dirname}/deploy`),
+      code: cdk.aws_lambda.Code.fromAsset(
+        `${__dirname}/../web/remix-lambda/deploy`
+      ),
     });
 
     // Create a Function URL for the Lambda
