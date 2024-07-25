@@ -5,6 +5,7 @@
     "cdk-deploy": "bin/cdk-deploy.js"
   },
   "scripts": {
+    "installs": "pnpm install && pnpm --prefix ./web/remix-lambda install",
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
