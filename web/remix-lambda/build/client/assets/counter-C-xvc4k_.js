@@ -1,0 +1,1 @@
+import{r as e,n as t}from"./components-yJuByGLl.js";function o(){const[n,r]=e.useState(0);return t.jsxs("div",{children:[t.jsx("h1",{children:"Counter"}),t.jsxs("p",{children:["Count: ",n]}),t.jsx("button",{onClick:()=>r(n+1),children:"Increment"})]})}export{o as C};
