@@ -8,7 +8,9 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "web:deploy": "pnpm --prefix ./web/remix-lambda build:deploy",
+    "web:test": "pnpm --prefix ./web/remix-lambda test"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",

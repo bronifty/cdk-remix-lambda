@@ -12,7 +12,7 @@ export class CdkDeployStack extends cdk.Stack {
       runtime: cdk.aws_lambda.Runtime.NODEJS_20_X,
       handler: "lambda.handler",
       code: cdk.aws_lambda.Code.fromAsset(
-        `${__dirname}/../web/remix-lambda/deploy`
+        `${__dirname}/../web/remix-lambda/deploy.zip`
       ),
     });
 
